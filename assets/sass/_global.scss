@@ -30,10 +30,22 @@ img {
   text-align: center;
   color: #fff;
 }
-.title{
-font-weight: 300;
-font-size: 50px;
-line-height: 138%;
-text-transform: uppercase;
-color: #000;
+.title {
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 138%;
+  text-transform: uppercase;
+  color: #000;
+}
+.plar {
+  position: absolute;
+  top: 40px;
+  left: -10px;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 102%;
+  color: #fff;
+  background: #fead04;
+  width: 60%;
 }

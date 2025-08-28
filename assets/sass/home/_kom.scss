@@ -1,0 +1,89 @@
+@use "../global";
+@use "../mixin" as *;
+
+.kom_parent {
+  .boxs {
+    display: grid;
+    margin-top: 40px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 230px  230px;
+    gap: 20px;
+    .bn2{
+        position: relative;
+        background-image: url(../../../img/kom2.png);
+         background-size: cover;
+        background-repeat: no-repeat;
+      p{
+        @extend .plar;
+      }
+    }
+    .bn3{
+        position: relative;
+        background-image: url(../../../img/kom3.svg);
+         background-size: cover;
+        background-repeat: no-repeat;
+      p{
+        @extend .plar;
+      }
+    }
+     .bn4{
+        position: relative;
+        background-image: url(../../../img/kom4.png);
+         background-size: cover;
+        background-repeat: no-repeat;
+      p{
+        @extend .plar;
+      }
+    }
+     .bn5{
+        position: relative;
+        background-image: url(../../../img/kom5.png);
+         background-size: cover;
+        background-repeat: no-repeat;
+      p{
+        @extend .plar;
+      }
+    }
+     .bn6{
+        position: relative;
+        background-image: url(../../../img/kom6.png);
+         background-size: cover;
+        background-repeat: no-repeat;
+      p{
+        @extend .plar;
+      }
+    }
+    .boks {
+        position: relative;
+        background-image: url(../../../img/kom4.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+      p {
+       @extend .plar;
+      }
+    }
+  }
+}
+@media(max-width:1194px){
+    .kom_parent{
+        h2{
+            font-size: 40px;
+        }
+        .boxs{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 230px 230px 230px;
+        
+        }
+    }
+}
+@media(max-width:680px){
+    .kom_parent{
+         h2{
+            font-size: 20px;
+        }
+        .boxs{
+            grid-template-columns:  1fr;
+            grid-template-rows: 230px 230px  230px 230px 230px 230px;
+        }
+    }
+}

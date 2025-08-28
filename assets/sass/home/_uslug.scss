@@ -1,0 +1,57 @@
+@use "../global";
+@use "../mixin" as *;
+.uslug{
+    margin: 90px 0;
+}
+.uslug_parent {
+    
+  .uslugs {
+    display: grid;
+    margin-top: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    .usx {
+        text-align: center;
+      img {
+        z-index: -1;
+      }
+      button {
+        padding: 5px 90px;
+        border: none;
+        transform: translateY(-20px);
+        bottom: -10px;
+        z-index: 2;
+
+        background: #fff;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 138%;
+        text-align: center;
+        color: #000;
+      }
+    }
+  }
+}
+@media(max-width:1329px){
+    .uslug_parent{
+        .uslugs{
+            .usx{
+                button{
+                    font-size: 20px;
+                    padding: 5px 60px;
+                }
+            }
+        }
+    }
+}
+@media(max-width:1000px){
+     .uslug_parent{
+        
+        .uslugs{
+            grid-template-columns: repeat(6,1fr);
+            gap: 10px;
+            overflow-x: auto;
+           
+        }
+    }
+}
