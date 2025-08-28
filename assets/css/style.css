@@ -43,11 +43,120 @@ img {
   color: #000;
 }
 
-.nashe_parent .nashe_boxes .box {
-  display: flex;
-  background-image: url();
+.nashe {
+  margin: 90px 0;
 }
 
+.nashe_parent {
+  padding: 40px 0;
+}
+.nashe_parent h2 b {
+  font-weight: 900;
+}
+.nashe_parent .nashe_boxes {
+  margin-top: 40px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 260px 260px;
+}
+.nashe_parent .nashe_boxes .br img {
+  transform: translateX(20px);
+}
+.nashe_parent .nashe_boxes .be img {
+  transform: translateX(-60px);
+}
+.nashe_parent .nashe_boxes .hr img {
+  transform: translateX(-150px);
+}
+.nashe_parent .nashe_boxes .box {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(rgba(255, 241, 241, 0.5), rgba(246, 236, 236, 0.5)), url(../../../img/bugdoy2.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.nashe_parent .nashe_boxes .box .left {
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+.nashe_parent .nashe_boxes .box:hover {
+  box-shadow: 4px 4px 20px rgb(254, 173, 2);
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+@media (max-width: 1360px) {
+  .nashe_parent .nashe_boxes {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 260px 260px 260px;
+  }
+  .nashe_parent .nashe_boxes .rr img {
+    transform: translateX(-100px);
+  }
+}
+@media (max-width: 988px) {
+  .nashe_parent .nashe_boxes .be img {
+    width: 200px;
+  }
+}
+@media (max-width: 898px) {
+  .nashe_parent h2 {
+    font-size: 45px;
+  }
+  .nashe_parent .nashe_boxes {
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 300px 300px 300px 300px 300px;
+  }
+  .nashe_parent .nashe_boxes .box {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .nashe_parent .nashe_boxes .box img {
+    width: 150px;
+  }
+  .nashe_parent .nashe_boxes .box .left {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .nashe_parent .nashe_boxes .be img {
+    width: 200px;
+  }
+}
+@media (max-width: 650px) {
+  .nashe_parent h2 {
+    font-size: 30px;
+  }
+  .nashe_parent .nashe_boxes .hr img {
+    width: 250px;
+  }
+  .nashe_parent .nashe_boxes .box img {
+    transform: none;
+  }
+}
+@media (max-width: 562px) {
+  .nashe_parent h2 {
+    font-size: 20px;
+  }
+  .nashe_parent .nashe_boxes .hr img {
+    width: 200px;
+  }
+  .nashe_parent .nashe_boxes .box {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .nashe_parent .nashe_boxes .box img {
+    transform: none;
+    width: 150px;
+  }
+  .nashe_parent .nashe_boxes .box .left {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
 .navbar {
   padding: 15px 0;
   display: flex;
