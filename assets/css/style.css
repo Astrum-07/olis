@@ -35,6 +35,19 @@ img {
   color: #fff;
 }
 
+.title {
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 138%;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.nashe_parent .nashe_boxes .box {
+  display: flex;
+  background-image: url();
+}
+
 .navbar {
   padding: 15px 0;
   display: flex;

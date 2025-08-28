@@ -1,0 +1,13 @@
+@use "../global";
+@use "../mixin" as *;
+.nashe_parent{
+    .nashe_boxes{
+        .box{
+            display: flex;
+           background-image: url();
+           
+           
+           
+        }
+    }
+}
