@@ -1,0 +1,91 @@
+@use "../global";
+
+.otziv_parent {
+    p{
+
+        a{
+            color: #000;
+        }
+    }
+    h2{
+        text-align: center;
+    }
+  .boxes {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    .box {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      width: 49%;
+      h3 {
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 138%;
+        color: #000;
+      }
+      p {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 155%;
+        color: #000;
+      }
+      video {
+        width: 100%;
+      }
+    }
+  }
+  .boxx{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    .xoxx{
+        width: 49%;
+        display: flex;
+        align-items: center;
+        background-color: rgb(204, 201, 201);
+        .right{
+            
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+  }
+}
+@media(max-width:1200px){
+    .otziv_parent{
+        .boxes{
+            flex-direction: column;
+            .box{
+                width: 100%;
+            }
+        }
+         .boxx{
+            flex-direction: column;
+            .xoxx{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media(max-width:600px){
+    .otziv_parent{
+        .boxes{
+            flex-direction: column;
+            .box{
+                width: 100%;
+            }
+        }
+         .boxx{
+            flex-direction: column;
+            .xoxx{
+                width: 100%;
+                flex-direction: column;
+            }
+        }
+    }
+}
