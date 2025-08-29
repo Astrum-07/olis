@@ -82,19 +82,19 @@
 }
 @media (max-width: 898px) {
   .nashe_parent {
-    h2{
-        font-size: 45px;
+    h2 {
+      font-size: 45px;
     }
     .nashe_boxes {
-      grid-template-columns: 1fr ;
+      grid-template-columns: 1fr;
       grid-template-rows: 300px 300px 300px 300px 300px 300px;
-      .box{
-        img{
-            width: 150px;
+      .box {
+        img {
+          width: 150px;
         }
-        .left{
-            margin-top: 10px;
-            width: 100%;
+        .left {
+          margin-top: 10px;
+          width: 100%;
         }
         flex-direction: column;
         gap: 10px;
@@ -109,9 +109,8 @@
 }
 @media (max-width: 650px) {
   .nashe_parent {
-    h2{
-        font-size: 30px;
-
+    h2 {
+      font-size: 30px;
     }
     .nashe_boxes {
       .hr {
@@ -121,7 +120,6 @@
       }
       .box {
         img {
-
           transform: none;
         }
       }
@@ -130,8 +128,8 @@
 }
 @media (max-width: 562px) {
   .nashe_parent {
-    h2{
-        font-size: 20px;
+    h2 {
+      font-size: 20px;
     }
 
     .nashe_boxes {
@@ -142,7 +140,6 @@
       }
       .box {
         img {
-
           transform: none;
           width: 150px;
         }

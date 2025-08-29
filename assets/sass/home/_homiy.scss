@@ -1,0 +1,10 @@
+@use "../global";
+@use "../mixin" as *;
+.homiy_parent{
+    @include flex;
+    overflow-x: auto;
+    margin-bottom: 90px ;
+}
+h2{
+    margin-top: 90px;
+}

@@ -1,0 +1,27 @@
+@use "../global";
+@use "../mixin" as *;
+.pre{
+    margin: 90px 0;
+}
+.pre_parent{
+    h2{
+        text-align: center
+    }
+    .bottom{
+        margin-top: 40px;
+        @include flex;
+        .di{
+            width: 2px;
+            height: 100px;
+            background-color: black;
+        }
+        .botbox{
+            text-align: center;
+        }
+    }
+}
+@media(max-width:1000px){
+    .pre{
+        display: none;
+    }
+}

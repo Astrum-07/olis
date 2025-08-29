@@ -1,0 +1,53 @@
+@use "../global";
+@use "../mixin" as *;
+.xabar{
+    margin: 90px 0;
+}
+.xabar_parent {
+    h2{
+        font-size: 40px;
+    }
+  .scroll {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    margin-top: 40px;
+    .box {
+        width: 100%;
+        .left{
+            width: 40%;
+            img{
+                width: 100%;
+            }
+        }
+        @include flex;
+        background-color: #fff;
+        gap: 30px;
+      .right {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        h4 {
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 126%;
+          color: #000;
+        }
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 138%;
+          color: #000;
+        }
+        h5 {
+          a {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 138%;
+            color: #fead04;
+          }
+        }
+      }
+    }
+  }
+}

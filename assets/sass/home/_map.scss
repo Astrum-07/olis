@@ -1,0 +1,42 @@
+@use "../global";
+@use "../mixin" as *;
+.map_parent{
+    margin-top: 20px;
+    @include flex;
+    .left{
+        width: 60%;
+    }
+    .right{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        button{
+            width: 300px;
+        }
+    }
+}
+@media(max-width:880px){
+    .map_parent{
+        flex-direction: column;
+        gap: 20px;
+        .left{
+            width: 100%;
+        }
+        .right{
+            width: 100%;
+        }
+    }
+}
+@media(max-width:437px){
+    .map_parent{
+        .right{
+            h2{
+                font-size: 30px;
+            }
+            button{
+                width: 275px;
+            }
+        }
+    }
+}

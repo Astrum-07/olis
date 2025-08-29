@@ -1,0 +1,101 @@
+@use "../global";
+@use "../mixin" as *;
+.form {
+  padding: 30px 0;
+  background: linear-gradient(
+      rgba(255, 241, 241, 0.5),
+      rgba(246, 236, 236, 0.5)
+    ),
+    url(../../../img/bugdoy2.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.form_parent {
+  @include flex;
+  .left {
+    img {
+      width: 400px;
+    }
+  }
+  .right {
+    width: 50%;
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      p {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 138%;
+        color: #000;
+      }
+     button{
+        width: 300px;
+     }
+      .name {
+        width: 49%;
+        border: none;
+        outline: none;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 138%;
+        color: #000;
+        border-bottom: 1px solid gray;
+      }
+      .tel {
+        width: 50%;
+        border: none;
+        outline: none;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 138%;
+        color: #000;
+         border-bottom: 1px solid gray;
+      }
+      .nj{
+        gap: 10px;
+      }
+      .email {
+        width: 100%;
+        border: none;
+        outline: none;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 138%;
+        color: #000;
+         border-bottom: 1px solid gray;
+      }
+      background-color: #fff;
+      padding: 30px;
+    }
+  }
+}
+@media(max-width:787px){
+    .form_parent{
+        flex-direction: column;
+        .left{
+            width: 100%;
+            text-align: center;
+        }
+        .right{
+            width: 100%;
+            form{
+                h3{
+                    font-size: 30px;
+                }
+                .nj{
+                    .name{
+                        width: 100%;
+                        margin-bottom: 10px;
+                    }
+                     .tel{
+                        width: 100%;
+                    }
+                }
+                button{
+                    width: 200px;
+                }
+            }
+        }
+    }
+}
